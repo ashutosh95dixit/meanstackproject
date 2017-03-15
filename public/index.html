@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+
+    <title>Movie Booking</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- custom styles -->
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+
+    <!-- ANGULAR CUSTOM -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers/MainCtrl.js"></script>
+    <script src="js/controllers/cancellationCtrl.js"></script>
+    <script src="js/services/NerdService.js"></script>
+    <script src="js/controllers/MovieCtrl.js"></script>
+    <script src="js/controllers/AssignCtrl.js"></script>
+    <script src="js/controllers/CityCtrl.js"></script>
+    <script src="js/controllers/ShowTimeCtrl.js"></script>
+    <script src="js/controllers/Theatrectrl.js"></script>
+    <script src="js/services/GeekService.js"></script>
+    <script src="js/appRoutes.js"></script>
+
+</head>
+
+<body ng-app="sampleApp" style="background-color: #eaeaea;">
+</head>
+<br> <br>
+<body ng-app="sampleApp">
+    <div class="container">
+      <h1 style="color:White"> MY MOVIE SHOW.COM </h1>
+
+
+<br><br>
+    <div class="container">
+
+      <div class="container">
+              <ul class="nav nav-tabs navbar-inverse navbar-fixed-top">
+                <li><a data-toggle="tab" href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicons-rotation-lock">Admin</span><strong class="caret"></strong></a>
+              <ul class="dropdown-menu">
+               <li><a data-toggle="tab" href="/movies"><span class="glyphicon glyphicon-film"></span> Movies</a></li>
+                   <li><a data-toggle="tab" href="/city"><span class="glyphicon glyphicon-map-marker"></span> City</a></li>
+                   <li><a data-toggle="tab" href="/theatre"><span class="glyphicon glyphicon-text-width"></span> Theatre</a></li>
+                   <li><a data-toggle="tab" href="/showtime"><span class="glyphicon glyphicon-facetime-video"></span> Show Timing</a></li>
+                   <li><a data-toggle="tab" href="/assign"><span class="glyphicon glyphicon-floppy-disk"></span> Assign</a></li>
+
+              </ul>
+            </li>
+
+                   <li><a data-toggle="tab" href="/Book"><span class="glyphicon glyphicon-remove-sign"></span> Cancellation</a></li>
+                   <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user">Log-in<strong class="caret"></strong></a>
+              <ul class="dropdown-menu">
+               <li><a data-toggle="tab" href="/login"><span class="glyphicon glyphicon-old-man"> Admin</span></a></li>
+                   <li><a data-toggle="tab" href="/sign"><span class="glyphicon glyphicon-group"> Sign-in</span></a></li>
+                </ul>
+                </li>
+            </ul>
+    </div>
+  </div>
+  <br>
+  <!-- ANGULAR DYNAMIC CONTENT -->
+  <div ng-view></div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.js"></script>
+    <br>  <br>
+     <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>
+
+   <footer class="footer">
+         <div class="container">
+           <p class="text-muted"><strong>&copy;&nbsp;2017 Desgin & developed by: <a href="#">Ashutosh Dixit</a></strong></p>
+         </div>
+      </footer>
+</body>
+
+</html>
